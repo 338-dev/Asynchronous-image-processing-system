@@ -1,0 +1,7 @@
+node_modules/
+
+uploads/
+compressed_images/
+generated_csv/
+.env
+package-lock.json
