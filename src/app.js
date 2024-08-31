@@ -13,6 +13,8 @@ connectDb();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+app.get("/", (req, res) => res.send("connected and running"));
+
 app.use('/compressed_images', express.static(path.join(__dirname, '../compressed_images')));
 app.use('/api/images', imageRoutes);
 
