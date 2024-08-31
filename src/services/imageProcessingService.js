@@ -7,6 +7,10 @@ import sharp from 'sharp';
 import axios from 'axios';
 import csv from 'csv-parser';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
