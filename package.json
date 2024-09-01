@@ -2,7 +2,7 @@
   "name": "image-processing-system",
   "version": "1.0.0",
   "description": "Asynchronous image processing system",
-  "main": "src/server.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "start": "node src/app.js",

@@ -13,13 +13,9 @@ connectDb();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.get("/", (req, res) => res.send("connected and running"));
+app.get("/", (req, res) => res.send({ message: "connected and running" }));
 
 app.use('/compressed_images', express.static(path.join(__dirname, '../compressed_images')));
 app.use('/api/images', imageRoutes);
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+export default app;
